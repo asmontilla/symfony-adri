@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %} {% block body %}
+<div class="container">
+    <p class="text-center"></p>
+    <h2> Segunda página de Symfony lalalala</h2>
+
+    <tr>
+        <td>ID</td>
+        <td>País</td>
+        <td>Abrev</td>
+        <td>Detalle</td>
+    </tr>
+    <tr>
+        {% for pais in paises %}
+        <td>{{ pais.id }}</td>
+        <td>{{ pais.descripcion }}</td>
+        <td>{{ pais.abrev }}</td>
+        {% endfor %}
+    </tr>
+
+</div>
+{% endblock %} {% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}"> {% endblock %}

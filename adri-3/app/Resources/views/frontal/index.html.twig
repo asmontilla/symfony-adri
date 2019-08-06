@@ -1,0 +1,29 @@
+ {% extends 'base.html.twig' %} {% block body %}
+<div class="container">
+
+    <h2 class="text-center"> Bienvenido a mi primera pagina Symfony</h2>
+    <ul class="nav">
+        <li class="nav-item">
+            <a class="nav-link" href="homepage">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="/paises">Países</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/provincias">Provincias</a>
+        </li>
+    </ul>
+
+
+    <div>
+        <a class="btn btn-primary" href="/paises"> Aqui iran los países</a>
+    </div>
+    <br>
+    <div>
+        <a class="btn btn-primary" href="/provincias"> Provincias</a>
+    </div>
+
+
+</div>
+{% endblock %} {% block stylesheets %}
+<link rel="stylesheet" href="{{ asset('assets/bootstrap/css/bootstrap.min.css') }}"> {% endblock %}
